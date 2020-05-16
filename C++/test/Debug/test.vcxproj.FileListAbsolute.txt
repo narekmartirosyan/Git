@@ -1,0 +1,2 @@
+C:\Users\narek\Desktop\NAREK\Git\C++\test\Debug\test.exe
+C:\Users\narek\Desktop\NAREK\Git\C++\test\Debug\test.pdb
