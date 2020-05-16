@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <head>
+      <title> Leipziger Biokiste </title>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <p1>Hallo Welt!</p1>
+          <ul>
+            <li> Start </li>
+            <li> Produkte </li>
+            <li> Feedback </li>
+            <li> Kontakt </li>
+          </ul>
+      </header>
+
+      <section>
+      </section>
+
+      <section>
+        <ol>
+          <li> <article> </article> </li>
+          <li> <article> </article> </li>
+          <li> <article> </article> </li>
+        </ol>
+      </section>
+
+      <aside>
+      </aside>
+
+      <footer>
+      </footer>
+
+    </div>
+
+  </body>

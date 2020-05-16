@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Leipziger Biokiste / Produkte </title>
+		<style>
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 50%;
+			}
+
+			td, th {
+			  border: 3px solid #ffffff;
+			  text-align: left;
+			  padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #f0f0f0f0;
+			}
+			tr:nth-child(odd) {
+				background-color: #D7D5D5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>Produkte</h2>
+
+		<table>
+		  <tr>
+		    <th>Biokiste S</th>
+		    <th>Biokiste M</th>
+		    <th>Biokiste L</th>
+		  </tr>
+		  <tr>
+		    <td>Feldsalat</td>
+		    <td>Tomaten</td>
+		    <td>Gurken </td>
+		  </tr>
+			<tr>
+		    <td>Kopfsalat</td>
+		    <td>Paprika</td>
+		    <td>Dill</td>
+		  </tr>
+			<tr>
+				<td>Ruccola</td>
+				<td>Aubergine</td>
+				<td>Schnittlauch</td>
+			</tr>
+			<tr>
+				<td>5,99€</td>
+				<td>6,99€</td>
+				<td>7,99€</td>
+			</tr>
+		</table>
+	</body>

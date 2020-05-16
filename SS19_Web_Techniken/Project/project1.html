@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- lang: language- important for search engines -->
+
+<head>
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    body {
+      background-color: powderblue;
+    }
+  </style>
+  <!-- Internal CSS goto line 134 -->
+  <title>PROJECT1</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <button type="button" name="Click me"></button>
+  <a href="https://www.pexels.com/search/travel/" target="_blank" title="Travel photos"> Travel photos </a> <br>
+  <!-- title -> extra info as a tooltip text when the mouse moves over the element -->
+  <!-- _blank -> Opens in a new window or tab -->
+  <ul>
+    <li><code>_blank</code> - Opens the linked document in a new window or tab</li>
+    <li><code>_self</code> - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+    <li><code>_parent</code> - Opens the linked document in the parent frame</li>
+    <li><code>_top</code> - Opens the linked document in the full body of the window</li>
+    <li><em>framename</em> - Opens the linked document in a named frame</li>
+  </ul>
+  <br>
+  <img src="travel.jpg" alt="boat" width="142" height="102" style="float:left">
+  <!-- float -> to let image float to the right or to the left of a text -->
+  <ol style="float:left">
+    <!-- <ol></ol> geordnete Liste -->
+    <li>Coffee</li>
+    <li>Tee</li>
+    <li>Milk</li>
+  </ol>
+  <p title="I'm a tooltip" style="color:red; float:left">
+    <!-- title: value of the title will be displayed as a tooltip
+           when you mouse over the paragraph
+      -->
+    My first <br> paraghraph.
+    <!-- <br> line breaker -->
+  </p> <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>
+    The browser will remove any extra spaces
+    and extra lines when the page is displayed.
+  </p>
+  <pre>
+      My Bonnie lies over the ocean.
+      My bonnie lies over the sea.
+  </pre>
+  <!-- The text inside a <pre> element is displayed in a fixed-width
+         font and it preserves both spaces and line breaks.
+    -->
+  <hr> <!-- <hr> defines a thematic break -->
+  <h1>Style Attributes</h1>
+  <h2 style="font-size:30px"> Font-size </h2>
+  <h2 style="color:blue"> Color </h2>
+  <!-- color picker package: ctrl+alt+c comes color picker -->
+  <p style="border:2px solid green; padding: 30px; margin: 30px">
+    Border <br>
+    Padding: The CSS <code>padding</code> property defines
+    a padding (space) between the text and the border. <br>
+    Margin: The CSS <code>margin</code> propety defines a
+    margin (space) outside the border.
+  </p>
+  <!-- solid nicht vergessen -->
+  <h4 style="font-family:courier"> Courier </h4>
+  <h5 style="background-color:blue"> Blue background </h5>
+  <h6 style="text-align:center"> Centered Heading </h6>
+  <hr>
+  <h1>Text Formatting</h1>
+  <b>This text is bold.</b> <br>
+  <strong>This text is strong.</strong> <br>
+  <!-- added semantic "strong" importance -->
+  <i>This text is italic</i> <br>
+  <em>This text is emphasized.</em>
+  <!-- added semantic importance -->
+  <!-- Browsers display <strong> as <b>, and <em> as <i>.
+         However, there is a difference in the meaning of
+         these tags: <b> and <i> defines bold and italic text,
+         but <strong> and <em> means that the text is "important".
+    -->
+  <h2>HTML <mark>Marked</mark> Formatting.</h2>
+  <p>My favorite color is <del>blue</del> red.</p>
+  <p>My favorite <ins>color</ins> is red.</p>
+  <h2>HTML <small>Small</small> Formatting.</h2>
+  <p>This is <sup>superscripted</sup> text.</p>
+  <!-- Wie 2 in "a²"  -->
+  <p>This is a <sub>subscripted</sub> text.</p>
+  <!-- Wie superscripted, aber unten -->
+  <hr>
+  <h1>Quotation and Citation Elements</h1>
+  <p>WWF's goal is to: <q>Build a future where
+      people live in harmony with nature.</q></p>
+  <!-- <q></q> short quotation "" -->
+  <p>Here is a quote form WWF's website:</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    <!-- cite: URL, указывающий на исходный документ или
+           сообщение, откуда была взята цитата.
+      -->
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+  </blockquote>
+  <!-- <blockquote></blockquote> defines a section
+         that is quoted from another source.
+    -->
+  <p>The <abbr title="World Health Organization">WHO</abbr>
+    was founded in 1948.</p>
+  <!-- <abbr></abbr> can give useful info to browsers etc. -->
+  <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+  <!-- <cite></cite> defines the title of a work.
+         Browsers usually display in italic.
+    -->
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+  <!-- defines bi-directional override. -->
+  <address>
+    <!-- defines contact information -->
+    Written by Narek Martirosyan. <br>
+    Neptunweg 19, 04205 Leipzig <br>
+    Deutschland
+  </address>
+  <hr>
+  <h1 id="CSS">CSS</h1>
+  <p>CSS can be added to HTML elements in 3 ways:
+    <ul>
+      <!-- ungeordnete Liste -->
+      <li> <b>Inline</b> by using the style attribute in HTML elements </li>
+      <li> <b>Internal</b> by using a <code>&lt;style&gt;</code> element in the &lt;head&gt; </li>
+      <!-- <code></code> Тег предназначен для отображения одной или нескольких строк текста,
+             который представляет собой программный код. Браузеры обычно отображают содержимое
+             контейнера <code> как моноширинный текст уменьшенного размера.
+             &lt; &gt; -> less than, greater than
+        -->
+      <li> <b>External</b> by using an external CSS file </li>
+    </ul>
+  </p>
+  <h3 style="color:red;"> Inline CSS </h3>
+  <p> An inline CSS is used to apply a unique style to a single HTML element. </p>
+  <h3> Internal CSS </h3>
+  <p> An internal CSS is used to define a style for an single HTML page.
+    An internal CSS is defined in the <code>&lt;head&gt;</code> section
+    of an HTML page, within a <code>&lt;style&gt;</code> element. <br>
+    Example in the <code>&lt;head&gt;</code> section.
+  </p>
+  <h3> External CSS </h3>
+  <p> An external style sheet is used to define the style for many HTML pages. <br>
+    <br>
+    <b> With an external style sheet, you can change the look of an entire web <br>
+      site, by changing one file. <br>
+    </b>
+    <br>
+    To use an external style sheet, add a link to it in the <code>&lt;head&gt;</code> <br>
+    section of the HTML page.
+    Example in the <code>&lt;head&gt;</code> section.
+  </p>
+  <p id="p01"> To define a specific style for one special element, add an <code>id</code>
+    attribute to the element.
+  </p>
+  <p class="error">To define a style for special types of elements, add a <code>class</code>
+    attribute to the element.
+  </p>
+  <h3> External References </h3>
+  <p> External style sheets can be referenced with a full URL or with a path relative to the
+    current web page. </p>
+  <!-- <link rel="stylesheet" href="URL"> -->
+  <hr>
+  <h1 id="Links">Links</h1>
+  <h3> Local Links </h3>
+  <p> A local link (link to the same web site) is specified with a relative URL
+    (without https://www...).
+  </p>
+  <!-- wie z.B. html_images.asp -->
+  <h3>Link colors</h3>
+  <p> a:link -> link <br>
+    a:visited -> visited <br>
+    a:hover -> hover mouse on link <br>
+    a:active -> active link <br>
+  </p>
+  <h3> Create a Bookmark </h3>
+  <pre>
+ HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+ Bookmarks can be useful if your webpage is very long.
+ To make a bookmark, you must first create the bookmark, and then add a link to it.
+ When the link is clicked, the page will scroll to the location with the bookmark.
+  </pre>
+  <a href="#CSS"> Jump to CSS </a> <br>
+  <a href="#Links"> Jump to Links </a> <br>
+  <hr>
+  <h1>Images</h1>
+  <h3>Images in another folder</h3>
+  <p>It is common to store images in a sub- folder. You must then
+    include the folder name in the <code>src</code> attribute.
+    <code>&lt;img src=&quot;/images/html5.gif" alt="HTML5 Icon&quot;&gt;</code></p>
+  <h3> Image Maps </h3>
+  <p>The <code>&lt;map&gt;</code> tag defines an image-map. An image-map is an image with
+    clickable areas. <br>
+    <h4>Example</h4>
+    <code>
+      &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt; <br>
+      &lt;map name="workmap"&gt; <br>
+      &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt; <br>
+      &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
+      &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt; <br>
+      &lt;/map&gt;</code>
+  </p>
+  <h3>Background Color</h3>
+  <p> CSS-> in section <code>&lt;body&gt; style="background-image:url('')" </code> </p>
+  <h3>The &lt;picture&gt; Element</h3>
+  <p>HTML5 introduced the &lt;picture&gt; element to add more flexibility
+    when specifying image resources. Contains a number of &lt;source&gt;
+    elements, each referring to different image resources. This way the browser can
+    choose the image that best fits the current view and/or device.</p>
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <source media="(min-width: 465px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdv529WIqnVisVhyOX0rhJvQXmBagnV7Y9BVDPzv_kfh0Lrcc">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJUnJoXpj5yhHkudIeZWTVPoGcNYTZGLOnHI-UTSdzGZJ-Qdh" alt="Mainz" style="width:auto;">
+  </picture>
+  <!-- Always specify an <img> element as the last child element
+         of the <picture> element. The <img> element is used by browsers
+         that don't support the <picture> element, or if none of the <source>
+         tags matched.
+    -->
+  <hr>
+  <h1>HTML Tables</h1>
+  <table style="width:100%">
+    <tr>
+      <!-- table row -> sharq -->
+      <th>Firstname</th> <!-- table header -->
+      <th>Lastname</th>
+      <th>Age</th>
+      <th colspan="2">Tel.</th> <!-- makes a cell span more than one column; website schauen -->
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>01785059338</td>
+      <td>01763388475</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>01781122335</td>
+      <td>01832627662</td>
+    </tr>
+  </table>
+  <!-- styles.css schauen
+         border-collapse -> borders collapse into one border
+    -->
+
+  <h2>Table Caption</h2>
+  <p>To add a caption to a table, use the caption tag.</p>
+  <table id="t01">
+    <!-- Special style for one table -->
+    <caption>Bill Gates</caption>
+    <tr>
+      <th>Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th> <!-- wie colspan -->
+      <td>55577854</td>
+    </tr>
+    <tr>
+      <td>55577855</td>
+    </tr>
+  </table>
+  <!-- table tr:nth-child(even[odd]) -->
+
+  <h2>Table Example</h2>
+
+  <table id="t02">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+  </table>
+  <h2>Using &lt;colgroup&gt; tag</h2>
+  <table>
+    <colgroup>
+      <!-- colgroup specifies a group of one or more columns in a table for formatting -->
+      <col span="2" style="background-color:red">
+      <col style="background-color:yellow">
+    </colgroup>
+    <!-- The <colgroup> tag must be a child of a
+       <table> element, after any <caption> elements
+       and before any <thead>, <tbody>, <tfoot>, and
+       <tr> elements.
+  -->
+    <tr>
+      <th>ISBN</th>
+      <th>Title</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>3476896</td>
+      <td>My first HTML</td>
+      <td>$53</td>
+    </tr>
+    <tr>
+      <td>5869207</td>
+      <td>My first CSS</td>
+      <td>$49</td>
+    </tr>
+  </table>
+  <h2>Using &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; tags</h2>
+  <table>
+    <thead>
+      <!-- thead is used to group header content -->
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <h1>HTML Lists</h1>
+  <p><a href="project2.html">Link to project2</a></p>
+
+</body>
+
+</html>
